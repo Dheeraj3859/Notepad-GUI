@@ -77,23 +77,11 @@ def find_fun(*args):
 	find_fram.pack(pady=20)
 	#label
 	text_find = ttk.Label(find_fram,text='find')
-	#text_replace = ttk.Label(find_fram,text='Replace')
-	#entry box
 	find_input = ttk.Entry(find_fram,width=30)
-	#replace_input = ttk.Entry(find_fram,width=30)
-	#button
 	find_button = ttk.Button(find_fram,text='find',command=find)
-	#replace_button = ttk.Button(find_fram,text='Replace')
-	#text label grid
 	text_find.grid(row=0,column=0,padx=4,pady=4)
-	#text_replace.grid(row=1,column=0,padx=4,pady=4)
-	#entry grid
 	find_input.grid(row=0,column=1,padx=4,pady=4)
-	#replace_input.grid(row=1,column=1,padx=4,pady=4)
-	#button grid
 	find_button.grid(row=1,column=0,padx=8,pady=4)
-	#replace_button.grid(row=2,column=1,padx=8,pady=4)
-
 	
 def find_and_replace():
 	def find():
